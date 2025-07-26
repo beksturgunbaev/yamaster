@@ -1,3 +1,4 @@
+import { Footer, Header } from '@/src/widgets';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ru'>
-      <body>{children}</body>
+      <body>
+        <Header />
+        <div className='pt-[74px]'>{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
