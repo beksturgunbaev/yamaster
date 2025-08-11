@@ -31,12 +31,12 @@ export const Header = () => {
           ))}
         </nav>
         <Link
-          href='/#callback'
+          href='tel:0504454408'
           className='hidden md:flex items-center gap-2 bg-[var(--colBlue)] hover:bg-opacity-80 text-white font-bold py-2.5 px-4 rounded-full shadow-lg transition transform hover:-translate-y-0.5 hover:scale-105'
-          aria-label='Заказать звонок'
+          aria-label='Позвонить'
         >
           <Phone size={20} />
-          Заказать звонок
+          Позвонить
         </Link>
         <button
           className='md:hidden p-2 text-blue-700 hover:text-cyan-600 transition'

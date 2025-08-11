@@ -22,11 +22,11 @@ export const Footer = () => {
           <ul className='space-y-3'>
             <li className='flex items-center gap-3 hover:text-cyan-400 transition cursor-pointer'>
               <Phone size={20} />
-              <a href='tel:+996700000000'>+996 700 000 000</a>
+              <a href='tel:+996700000000'>+996 504 454 408</a>
             </li>
             <li className='flex items-center gap-3 hover:text-cyan-400 transition cursor-pointer'>
               <Mail size={20} />
-              <a href='mailto:info@yamaster.kg'>info@yamaster.kg</a>
+              <a href='mailto:info@yamaster.kg'>turgunbaaev@gmail.com</a>
             </li>
             <li className='flex items-center gap-3 hover:text-cyan-400 transition cursor-pointer'>
               <MapPin size={20} />
@@ -47,11 +47,11 @@ export const Footer = () => {
               </Link>
             ))}
             <Link
-              href='/#callback'
+              href='tel:0504454408'
               className='mt-4 inline-block bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-2 px-6 rounded-full shadow-lg transition text-center'
               aria-label='Заказать звонок'
             >
-              Заказать звонок
+              Позвноить
             </Link>
           </nav>
         </div>

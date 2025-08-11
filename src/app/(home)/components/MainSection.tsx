@@ -1,12 +1,11 @@
 'use client';
 import Image from 'next/image';
-import banner from '@/public/banner.jpg'; // путь к вашему изображению
+import banner from '@/public/banner.jpg';
 import { PhoneCall } from 'lucide-react';
 
-export default function Home() {
+export const MainSection = () => {
   return (
     <section className='relative min-h-[620px] flex items-center justify-center overflow-hidden'>
-      {/* Фоновое изображение */}
       <Image
         src={banner}
         alt='Баннер ванная'
@@ -49,4 +48,4 @@ export default function Home() {
       </div>
     </section>
   );
-}
+};
