@@ -1,4 +1,5 @@
+import Services from "./Services";
 import CounterInfo from "./CounterInfo";
-import { MainSection } from "./MainSection";
+import MainSection from "./MainSection";
 
-export { CounterInfo, MainSection }
+export { Services, CounterInfo, MainSection }

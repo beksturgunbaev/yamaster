@@ -3,7 +3,7 @@ import Image from 'next/image';
 import banner from '@/public/banner.jpg';
 import { PhoneCall } from 'lucide-react';
 
-export const MainSection = () => {
+const MainSection = () => {
   return (
     <section className='relative min-h-[620px] flex items-center justify-center overflow-hidden'>
       <Image
@@ -49,3 +49,5 @@ export const MainSection = () => {
     </section>
   );
 };
+
+export default MainSection;

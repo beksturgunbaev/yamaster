@@ -1,6 +1,7 @@
-import { Footer, Header } from '@/src/widgets';
 import './globals.css';
 import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import { Footer, Header } from '@/src/widgets';
 
 export const metadata: Metadata = {
   title: 'Услуги сантехника',
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
   },
 };
 
+const montserrat = Montserrat({
+  subsets: ['cyrillic'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ru'>
-      <body>
+      <body className={montserrat.className}>
         <Header />
         <div className='pt-[74px]'>{children}</div>
         <Footer />
