@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import banner from '@/public/banner.jpg';
 import { PhoneCall } from 'lucide-react';
+import { CustomButton } from '@/src/widgets';
 
 const MainSection = () => {
   return (
@@ -38,12 +39,11 @@ const MainSection = () => {
             className='w-full px-4 py-3 rounded-lg border border-[var(--colBlue)] focus:outline-none focus:ring-2 focus:ring-[var(--colBlue)] text-gray-800'
             required
           />
-          <button
+          <CustomButton
+            text='Жду звонка!'
             type='submit'
-            className='w-full bg-gradient-to-r from-[var(--colBlue)] to-[var(--colBlue)] text-white py-3 rounded-lg font-semibold hover:opacity-90 transition'
-          >
-            Жду звонка!
-          </button>
+            onClick={() => console.log('test')}
+          />
         </form>
       </div>
     </section>

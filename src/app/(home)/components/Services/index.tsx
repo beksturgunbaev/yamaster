@@ -1,4 +1,7 @@
+'use client';
 import plumberImg from '@/public/plumber.webp';
+import { services } from '@/src/shared/data';
+import { CustomLink } from '@/src/widgets';
 import Image from 'next/image';
 
 const Services = () => {
@@ -13,6 +16,23 @@ const Services = () => {
             Все виды сантехнических работ: монтаж, ремонт, обслуживание в
             квартире и доме.
           </h2>
+          <div className='grid grid-cols-3 gap-5 pt-5 pb-7'>
+            {services.map((el, index) => (
+              <div key={index} className='text-center'>
+                <div className='text-4xl mb-4'>{el.icon}</div>
+                <h4 className='text-lg font-medium leading-[120%] min-h-[43.2px]'>
+                  {el.name}
+                </h4>
+                <p className='text-sm font-light pt-1'>{el.desc}</p>
+              </div>
+            ))}
+          </div>
+          <CustomLink
+            text='Посмотреть все услуги'
+            link='/services'
+            // Icon={Phone}
+            className='flex justify-center items-center space-x-3'
+          />
         </div>
         <div className='w-2/5'>
           <div className='relative'>

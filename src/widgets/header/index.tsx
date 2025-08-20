@@ -1,11 +1,10 @@
 'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { Phone } from 'lucide-react';
 import logo from '../../../public/logo.png';
 import { NAV_MENU } from '@/src/shared/data';
-import { Menu, X, Phone } from 'lucide-react';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -38,13 +37,6 @@ export const Header = () => {
           <Phone size={20} />
           Позвонить
         </Link>
-        <button
-          className='md:hidden p-2 text-blue-700 hover:text-cyan-600 transition'
-          onClick={() => setOpen(!open)}
-          aria-label='Toggle menu'
-        >
-          {open ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>{' '}
       <div
         className={`md:hidden bg-white/90 backdrop-blur-sm border-t border-blue-200 transition-all duration-300 overflow-hidden ${
