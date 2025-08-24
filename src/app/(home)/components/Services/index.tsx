@@ -1,14 +1,12 @@
 'use client';
-import plumberImg from '@/public/plumber.webp';
 import { services } from '@/src/shared/data';
-import { CustomLink } from '@/src/widgets';
-import Image from 'next/image';
+import { CustomLink, ServiceCard } from '@/src/widgets';
 
 const Services = () => {
   return (
-    <div className='bg-gray-50 py-20'>
+    <div className='bg-gray-50 py-16'>
       <div className='container mx-auto px-4 flex gap-10'>
-        <div className='w-3/5'>
+        <div className=''>
           <p className='text-[var(--colCyan)] font-semibold text-lg'>
             Наши услуги
           </p>
@@ -16,35 +14,16 @@ const Services = () => {
             Все виды сантехнических работ: монтаж, ремонт, обслуживание в
             квартире и доме.
           </h2>
-          <div className='grid grid-cols-3 gap-5 pt-5 pb-7'>
-            {services.map((el, index) => (
-              <div key={index} className='text-center'>
-                <div className='text-4xl mb-4'>{el.icon}</div>
-                <h4 className='text-lg font-medium leading-[120%] min-h-[43.2px]'>
-                  {el.name}
-                </h4>
-                <p className='text-sm font-light pt-1'>{el.desc}</p>
-              </div>
+          <div className='grid grid-cols-4 gap-5 pt-5 pb-7'>
+            {services.slice(0, 8).map((el) => (
+              <ServiceCard key={el.id} service={el} />
             ))}
           </div>
           <CustomLink
-            text='Посмотреть все услуги'
+            text='Посмотреть все'
             link='/services'
-            // Icon={Phone}
-            className='flex justify-center items-center space-x-3'
+            className='flex justify-center items-center space-x-3 max-w-sm mx-auto'
           />
-        </div>
-        <div className='w-2/5'>
-          <div className='relative'>
-            <div className='w-[430px] h-[330px] bg-blue-400 absolute -top-5 -left-5'></div>
-            <Image
-              width={460}
-              height={360}
-              src={plumberImg}
-              alt='Фото сантехника'
-              className='relative'
-            />
-          </div>
         </div>
       </div>
     </div>
