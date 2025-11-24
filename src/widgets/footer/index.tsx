@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { NAV_MENU } from '@/src/shared/data';
 import { Phone, MapPin, Mail } from 'lucide-react';

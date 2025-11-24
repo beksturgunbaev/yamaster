@@ -1,16 +1,16 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'О нас | YaMaster',
+  title: 'Услуги | YaMaster',
   description: 'Информация о компании YaMaster и нашей деятельности.',
 };
 
-const AboutPage = () => {
+const ServicesPage = () => {
   return (
     <div className='container mx-auto px-4'>
-      <h1>About page</h1>
+      <h1>Services page</h1>
     </div>
   );
 };
 
-export default AboutPage;
+export default ServicesPage;
