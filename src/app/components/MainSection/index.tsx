@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import banner from '@/public/banner.jpg';
-import { PhoneCall, Droplet, Clock, Shield } from 'lucide-react';
 import { CustomButton } from '@/src/widgets';
+import { PhoneCall, Droplet, Clock, Shield } from 'lucide-react';
 
 const MainSection = () => {
   const [phone, setPhone] = useState('');
@@ -31,9 +31,8 @@ const MainSection = () => {
             Сантехнический сервис №1 в Бишкеке
           </div>
 
-          <h1 className='text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[110%] drop-shadow-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both]'>
-            Профессиональная сантехника{' '}
-            <br className='hidden sm:block' />
+          <h1 className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[110%] drop-shadow-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both]'>
+            Профессиональная сантехника <br className='hidden sm:block' />
             начинается{' '}
             <span className='relative inline-block'>
               <span className='relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 animate-[shimmer_3s_ease-in-out_infinite]'>

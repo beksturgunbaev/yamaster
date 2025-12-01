@@ -57,7 +57,7 @@ export const Header = () => {
               ))}
             </nav>
 
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-3'>
               <Link
                 href='tel:+996504454408'
                 className='hidden md:flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
@@ -65,6 +65,14 @@ export const Header = () => {
               >
                 <Phone size={20} className='animate-pulse' />
                 <span>+996 504 454 408</span>
+              </Link>
+
+              <Link
+                href='tel:+996504454408'
+                className='md:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
+                aria-label='Позвонить'
+              >
+                <Phone size={22} className='animate-pulse' />
               </Link>
 
               <button
