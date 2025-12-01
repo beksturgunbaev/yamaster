@@ -1,21 +1,31 @@
 'use client';
-import { Shield, Clock, BadgeCheck, Headphones, Wallet, Sparkles } from 'lucide-react';
+import {
+  Shield,
+  Clock,
+  BadgeCheck,
+  Headphones,
+  Wallet,
+  Sparkles,
+} from 'lucide-react';
 
 const features = [
   {
     icon: Clock,
     title: 'Быстрый выезд',
-    description: 'Приезжаем в течение 30-60 минут после вызова по городу Бишкек',
+    description:
+      'Приезжаем в течение 30-60 минут после вызова по городу Бишкек',
   },
   {
     icon: Shield,
     title: 'Гарантия качества',
-    description: 'Предоставляем гарантию до 12 месяцев на все выполненные работы',
+    description:
+      'Предоставляем гарантию до 12 месяцев на все выполненные работы',
   },
   {
     icon: BadgeCheck,
     title: 'Опытные мастера',
-    description: '10+ лет опыта работы. Все специалисты имеют профильное образование',
+    description:
+      '10+ лет опыта работы. Все специалисты имеют профильное образование',
   },
   {
     icon: Wallet,
@@ -30,7 +40,8 @@ const features = [
   {
     icon: Sparkles,
     title: 'Чистота',
-    description: 'Убираем за собой после работы. Оставляем всё в идеальном порядке',
+    description:
+      'Убираем за собой после работы. Оставляем всё в идеальном порядке',
   },
 ];
 
@@ -48,11 +59,12 @@ export default function Features() {
           <h2 className='text-4xl md:text-5xl font-bold text-gray-900 leading-tight'>
             Почему выбирают{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600'>
-              YaMaster
+              Usta
             </span>
           </h2>
           <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
-            Мы заботимся о каждом клиенте и гарантируем высочайшее качество услуг
+            Мы заботимся о каждом клиенте и гарантируем высочайшее качество
+            услуг
           </p>
         </div>
 
@@ -63,7 +75,10 @@ export default function Features() {
               <div
                 key={index}
                 className='group relative bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:border-cyan-300 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-[fadeInUp_0.8s_ease-out]'
-                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                  animationFillMode: 'both',
+                }}
               >
                 <div className='flex items-start gap-4'>
                   <div className='flex-shrink-0 w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300'>

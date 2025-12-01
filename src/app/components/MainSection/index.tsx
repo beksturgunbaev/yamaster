@@ -31,12 +31,12 @@ const MainSection = () => {
             Сантехнический сервис №1 в Бишкеке
           </div>
 
-          <h1 className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[110%] drop-shadow-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both]'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[110%] drop-shadow-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both]'>
             Профессиональная сантехника <br className='hidden sm:block' />
-            начинается{' '}
+            начинается <br />{' '}
             <span className='relative inline-block'>
               <span className='relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 animate-[shimmer_3s_ease-in-out_infinite]'>
-                с YaMaster
+                c USTA
               </span>
               <span className='absolute inset-0 blur-2xl bg-gradient-to-r from-cyan-400 to-blue-500 opacity-50' />
             </span>

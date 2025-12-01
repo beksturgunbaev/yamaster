@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yamaster.kg/sitemap.xml
+Sitemap: https://Usta.kg/sitemap.xml

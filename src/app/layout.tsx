@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'YaMaster',
+  name: 'Usta',
   description: 'Профессиональные сантехнические услуги в Бишкеке',
   telephone: '+996504454408',
   address: {

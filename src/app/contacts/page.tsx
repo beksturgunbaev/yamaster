@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Контакты | YaMaster',
-  description: 'Информация о компании YaMaster и нашей деятельности.',
+  title: 'Контакты | Usta',
+  description: 'Информация о компании Usta и нашей деятельности.',
 };
 
 const ContactsPage = () => {
