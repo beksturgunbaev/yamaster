@@ -1,9 +1,16 @@
 import type { Metadata } from 'next';
-import { CounterInfo, MainSection, Services } from './components';
+import { CounterInfo, MainSection, Services, Features, Testimonials, CTA } from './components';
 
 export const metadata: Metadata = {
-  title: 'Услуги сантехника',
-  description: 'Сантехнические услуги в городе Бишкек',
+  title: 'YaMaster - Профессиональные сантехнические услуги в Бишкеке | Быстро и качественно',
+  description: 'Сантехнические услуги в Бишкеке: установка, ремонт, обслуживание. Быстрый выезд за 30-60 мин. Гарантия до 12 месяцев. 10+ лет опыта. Честные цены. ☎️ +996 504 454 408',
+  keywords: 'сантехник Бишкек, сантехнические услуги, установка унитаза, ремонт сантехники, прочистка канализации, установка бойлера, сантехник на дом',
+  openGraph: {
+    title: 'YaMaster - Сантехнические услуги №1 в Бишкеке',
+    description: 'Профессиональный сантехник в Бишкеке. Быстрый выезд, гарантия качества, честные цены.',
+    type: 'website',
+    locale: 'ru_RU',
+  },
   icons: {
     icon: '/favicon.png',
   },
@@ -15,6 +22,9 @@ export default function Home() {
       <MainSection />
       <CounterInfo />
       <Services />
+      <Features />
+      <Testimonials />
+      <CTA />
     </main>
   );
 }
