@@ -1,64 +1,77 @@
-import { renderIcon } from '@/src/shared/helpers/renderIcon';
-import { IService } from '@/src/shared/types';
-import noImg from '@/public/no-image.jpg';
-import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { IService } from '@/src/shared/types';
+import { renderIcon } from '@/src/shared/helpers/renderIcon';
+import { ArrowRight, Clock, DollarSign } from 'lucide-react';
 
 export function ServiceCard({ service }: { service: IService }) {
-  const { id, title, shortDesc, price, duration, icon, image } = service;
-
   return (
-    <Link href={`/services/${id}`} className='group block h-full'>
-      <article className='relative flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:shadow-2xl hover:border-cyan-300 hover:-translate-y-2'>
-        <div className='relative h-48 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200'>
-          <Image
-            src={image ?? noImg}
-            alt={title}
-            fill
-            blurDataURL={`${noImg}`}
-            className='object-cover transition-all duration-500 group-hover:scale-110 group-hover:rotate-2 w-full h-full'
-            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-          />
-          <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent' />
+    <Link
+      key={service.id}
+      href={`/services/${service.slug}`}
+      className='group block h-full'
+    >
+      <article className='relative h-full flex flex-col bg-white rounded-2xl border-2 border-gray-200 hover:border-cyan-400 p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 overflow-hidden'>
+        <div className='absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-blue-600/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
 
-          <div className='absolute top-3 left-3 flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300'>
-            {renderIcon(icon, 'text-cyan-600 w-6 h-6')}
+        <div className='relative z-10 flex flex-col h-full'>
+          <div className='flex items-start justify-between mb-4'>
+            <div className='flex items-center justify-center w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300'>
+              {renderIcon(service.icon, 'w-7 h-7 text-white')}
+            </div>
+
+            <span
+              className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${
+                service.category === 'installation'
+                  ? 'bg-blue-100 text-blue-700'
+                  : service.category === 'repair'
+                  ? 'bg-orange-100 text-orange-700'
+                  : service.category === 'cleaning'
+                  ? 'bg-purple-100 text-purple-700'
+                  : service.category === 'emergency'
+                  ? 'bg-red-100 text-red-700'
+                  : 'bg-green-100 text-green-700'
+              }`}
+            >
+              {service.category === 'installation'
+                ? 'Установка'
+                : service.category === 'repair'
+                ? 'Ремонт'
+                : service.category === 'cleaning'
+                ? 'Чистка'
+                : service.category === 'emergency'
+                ? 'Срочно'
+                : 'Обслуживание'}
+            </span>
+          </div>
+
+          <h3 className='text-xl font-bold text-gray-900 mb-3 group-hover:text-cyan-600 transition-colors duration-300'>
+            {service.title}
+          </h3>
+
+          <p className='text-gray-600 text-sm leading-relaxed mb-4 flex-grow'>
+            {service.shortDescription}
+          </p>
+
+          <div className='flex items-center justify-between pt-4 border-t border-gray-100'>
+            <div className='flex items-center gap-4 text-sm'>
+              <div className='flex items-center gap-1 text-gray-600'>
+                <DollarSign className='w-4 h-4 text-cyan-600' />
+                <span className='font-semibold'>{service.price}</span>
+              </div>
+              <div className='flex items-center gap-1 text-gray-600'>
+                <Clock className='w-4 h-4 text-blue-600' />
+                <span className='text-xs'>{service.duration}</span>
+              </div>
+            </div>
+
+            <div className='flex items-center gap-2 text-cyan-600 font-semibold text-sm group-hover:gap-3 transition-all duration-300'>
+              <span>Подробнее</span>
+              <ArrowRight className='w-4 h-4 group-hover:translate-x-1 transition-transform duration-300' />
+            </div>
           </div>
         </div>
 
-        <div className='flex flex-1 flex-col p-5 bg-gradient-to-br from-white to-gray-50/50'>
-          <h3 className='line-clamp-2 text-lg font-bold leading-snug text-gray-900 group-hover:text-cyan-600 transition-colors duration-300'>
-            {title}
-          </h3>
-
-          {shortDesc && (
-            <p className='line-clamp-3 mt-2 text-sm text-gray-600 leading-relaxed'>
-              {shortDesc}
-            </p>
-          )}
-
-          {(price || duration) && (
-            <div className='mt-auto flex flex-wrap gap-2 pt-4'>
-              {price && (
-                <span className='inline-flex items-center rounded-full bg-gradient-to-r from-emerald-500 to-green-500 px-3 py-1.5 text-xs font-semibold text-white shadow-md'>
-                  {price}
-                </span>
-              )}
-              {duration && (
-                <span className='inline-flex items-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 px-3 py-1.5 text-xs font-semibold text-white shadow-md'>
-                  {duration}
-                </span>
-              )}
-            </div>
-          )}
-        </div>
-
-        <div className='pointer-events-none absolute right-4 bottom-4 flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 opacity-0 shadow-lg backdrop-blur transition-all duration-300 group-hover:opacity-100 group-hover:scale-110'>
-          <ArrowRight className='w-5 h-5 text-white' />
-        </div>
-
-        <div className='absolute inset-0 rounded-2xl ring-2 ring-transparent group-hover:ring-cyan-400/50 transition-all duration-300 pointer-events-none' />
+        <div className='absolute inset-0 rounded-2xl ring-2 ring-transparent group-hover:ring-cyan-400/30 transition-all duration-300 pointer-events-none' />
       </article>
     </Link>
   );

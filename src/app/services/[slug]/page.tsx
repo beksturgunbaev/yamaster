@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getServiceBySlug, SERVICES } from '@/src/shared/data/services';
+import { ServiceCTA } from './components/ServiceCTA';
+import { ServiceFAQ } from './components/ServiceFAQ';
 import { ServiceHero } from './components/ServiceHero';
-// import { ServiceDetails } from './components/ServiceDetails';
-// import { ServiceBenefits } from './components/ServiceBenefits';
-// import { ServiceProcess } from './components/ServiceProcess';
-// import { ServiceFAQ } from './components/ServiceFAQ';
-// import { RelatedServices } from './components/RelatedServices';
-// import { ServiceCTA } from './components/ServiceCTA';
+import { ServiceDetails } from './components/ServiceDetails';
+import { ServiceProcess } from './components/ServiceProcess';
+import { ServiceBenefits } from './components/ServiceBenefits';
+import { RelatedServices } from './components/RelatedServices';
+import { getServiceBySlug, SERVICES } from '@/src/shared/data/services';
 
 interface ServicePageProps {
   params: {
@@ -88,12 +88,12 @@ export default function ServicePage({ params }: ServicePageProps) {
       />
       <main className='min-h-screen bg-gray-50'>
         <ServiceHero service={service} />
-        {/* <ServiceDetails service={service} />
+        <ServiceDetails service={service} />
         <ServiceBenefits service={service} />
         <ServiceProcess service={service} />
         <ServiceFAQ service={service} />
         <RelatedServices serviceId={service.id} />
-        <ServiceCTA /> */}
+        <ServiceCTA />
       </main>
     </>
   );

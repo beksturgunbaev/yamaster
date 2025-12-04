@@ -1,23 +1,6 @@
-export interface Service {
-  id: string;
-  title: string;
-  slug: string;
-  shortDescription: string;
-  fullDescription: string;
-  price: string;
-  duration: string;
-  icon: string;
-  image?: string;
-  benefits: string[];
-  includes: string[];
-  process: string[];
-  faqs: { question: string; answer: string }[];
-  relatedServices: string[];
-  keywords: string[];
-  category: 'installation' | 'repair' | 'cleaning' | 'emergency' | 'maintenance';
-}
+import { IService } from "../types";
 
-export const SERVICES: Service[] = [
+export const SERVICES: IService[] = [
   {
     id: '1',
     title: 'Установка и замена смесителей',
@@ -667,15 +650,15 @@ export const SERVICES: Service[] = [
   }
 ];
 
-export const getServiceBySlug = (slug: string): Service | undefined => {
+export const getServiceBySlug = (slug: string): IService | undefined => {
   return SERVICES.find(service => service.slug === slug);
 };
 
-export const getServicesByCategory = (category: Service['category']): Service[] => {
+export const getServicesByCategory = (category: IService['category']): IService[] => {
   return SERVICES.filter(service => service.category === category);
 };
 
-export const getRelatedServices = (serviceId: string): Service[] => {
+export const getRelatedServices = (serviceId: string): IService[] => {
   const service = SERVICES.find(s => s.id === serviceId);
   if (!service) return [];
 

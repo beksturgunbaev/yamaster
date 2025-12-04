@@ -1,7 +1,7 @@
 'use client';
-import { services } from '@/src/shared/data';
-import { CustomLink, ServiceCard } from '@/src/widgets';
 import { Wrench } from 'lucide-react';
+import { SERVICES } from '@/src/shared/data/services';
+import { CustomLink, ServiceCard } from '@/src/widgets';
 
 const Services = () => {
   return (
@@ -28,11 +28,14 @@ const Services = () => {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12'>
-          {services.slice(0, 8).map((el, index) => (
+          {SERVICES.slice(0, 8).map((el, index) => (
             <div
               key={el.id}
               className='animate-[fadeInUp_0.8s_ease-out]'
-              style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
+              style={{
+                animationDelay: `${index * 0.1}s`,
+                animationFillMode: 'both',
+              }}
             >
               <ServiceCard service={el} />
             </div>
@@ -43,7 +46,7 @@ const Services = () => {
           <CustomLink
             text='Посмотреть все услуги'
             link='/services'
-            className='inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
+            className='inline-flex justify-center items-center max-w-md gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
           />
         </div>
       </div>

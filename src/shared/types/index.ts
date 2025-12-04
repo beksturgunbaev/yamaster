@@ -14,12 +14,20 @@ export interface ICustomButton {
     onClick: () => void;
 }
 export interface IService {
-    id: number | string;
+    id: string;
     title: string;
-    shortDesc?: string;
-    fullDesc?: string;
-    price?: string;
-    duration?: string;
-    icon?: React.ElementType | React.ReactNode | string;
-    image?: StaticImageData | string;
-};
+    slug: string;
+    shortDescription: string;
+    fullDescription: string;
+    price: string;
+    duration: string;
+    icon: string;
+    image?: string;
+    benefits: string[];
+    includes: string[];
+    process: string[];
+    faqs: { question: string; answer: string }[];
+    relatedServices: string[];
+    keywords: string[];
+    category: 'installation' | 'repair' | 'cleaning' | 'emergency' | 'maintenance';
+}
