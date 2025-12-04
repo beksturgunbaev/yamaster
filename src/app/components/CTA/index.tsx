@@ -29,7 +29,7 @@ export const CTA = () => {
           {/* CTA-кнопки */}
           <div className='flex flex-col sm:flex-row items-center justify-center gap-4 pt-6'>
             <Link
-              href='tel:+996504454408'
+              href='tel:+996501622656'
               className='group inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-blue-600 font-bold py-4 px-8 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-white/20 w-full sm:w-auto justify-center'
             >
               <Phone className='w-6 h-6 group-hover:animate-bounce' />
@@ -38,7 +38,7 @@ export const CTA = () => {
             </Link>
 
             <Link
-              href='https://wa.me/996504454408'
+              href='https://wa.me/996501622656'
               target='_blank'
               rel='noopener noreferrer'
               className='group inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 w-full sm:w-auto justify-center'

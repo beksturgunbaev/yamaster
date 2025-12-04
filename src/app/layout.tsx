@@ -13,7 +13,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Usta',
   description: 'Профессиональные сантехнические услуги в Бишкеке',
-  telephone: '+996504454408',
+  telephone: '+996501622656',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Бишкек',

@@ -50,7 +50,10 @@ export default function Testimonials() {
             <div
               key={index}
               className='group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 hover:border-cyan-200 animate-[fadeInUp_0.8s_ease-out]'
-              style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
+              style={{
+                animationDelay: `${index * 0.15}s`,
+                animationFillMode: 'both',
+              }}
             >
               <div className='absolute top-6 right-6 text-cyan-500/10 group-hover:text-cyan-500/20 transition-colors duration-300'>
                 <Quote className='w-16 h-16 fill-current' />
@@ -59,12 +62,15 @@ export default function Testimonials() {
               <div className='relative z-10'>
                 <div className='flex gap-1 mb-4'>
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className='w-5 h-5 fill-yellow-400 text-yellow-400' />
+                    <Star
+                      key={i}
+                      className='w-5 h-5 fill-yellow-400 text-yellow-400'
+                    />
                   ))}
                 </div>
 
                 <p className='text-gray-700 leading-relaxed mb-6 italic'>
-                  "{testimonial.text}"
+                  {`"${testimonial.text}"`}
                 </p>
 
                 <div className='flex items-center gap-4'>
@@ -72,7 +78,9 @@ export default function Testimonials() {
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <h4 className='font-bold text-gray-900'>{testimonial.name}</h4>
+                    <h4 className='font-bold text-gray-900'>
+                      {testimonial.name}
+                    </h4>
                     <p className='text-sm text-gray-600'>{testimonial.role}</p>
                   </div>
                 </div>

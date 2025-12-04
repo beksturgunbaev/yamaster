@@ -32,16 +32,16 @@ export const Header = () => {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
             ? 'bg-white/95 backdrop-blur-xl shadow-lg'
-            : 'bg-white/80 backdrop-blur-md'
+            : 'bg-white/90 backdrop-blur-md'
         }`}
       >
-        <div className='container mx-auto px-6 py-4'>
+        <div className='container mx-auto px-6 py-2'>
           <div className='flex items-center justify-between'>
             <Link
               href='/'
               className='flex items-center space-x-3 hover:opacity-80 transition-all duration-300 hover:scale-105'
             >
-              <Image src={logo} alt='Usta' width={150} priority />
+              <Image src={logo} alt='Usta' width={140} priority />
             </Link>
 
             <nav className='hidden lg:flex items-center space-x-8 font-semibold text-gray-700'>
@@ -49,7 +49,7 @@ export const Header = () => {
                 <Link
                   key={index}
                   href={item?.link}
-                  className='relative group py-2 hover:text-cyan-600 transition-colors duration-300'
+                  className='relative group py-2 hover:text-cyan-600 transition-colors duration-300 lg:text-lg'
                 >
                   {item?.label}
                   <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 group-hover:w-full transition-all duration-300' />
@@ -59,16 +59,16 @@ export const Header = () => {
 
             <div className='flex items-center gap-3'>
               <Link
-                href='tel:+996504454408'
+                href='tel:+996501622656'
                 className='hidden md:flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
                 aria-label='Позвонить'
               >
                 <Phone size={20} className='animate-pulse' />
-                <span>+996 504 454 408</span>
+                <span>+996 501 622 656</span>
               </Link>
 
               <Link
-                href='tel:+996504454408'
+                href='tel:+996501622656'
                 className='md:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
                 aria-label='Позвонить'
               >
@@ -134,17 +134,17 @@ export const Header = () => {
 
             <div className='p-6 border-t border-gray-200 space-y-3 bg-gradient-to-br from-gray-50 to-white'>
               <Link
-                href='tel:+996504454408'
+                href='tel:+996501622656'
                 className='flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'
                 onClick={() => setOpen(false)}
                 aria-label='Позвонить'
               >
                 <Phone size={20} />
-                <span>+996 504 454 408</span>
+                <span>+996 501 622 656</span>
               </Link>
 
               <Link
-                href='https://wa.me/996504454408'
+                href='https://wa.me/996501622656'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'

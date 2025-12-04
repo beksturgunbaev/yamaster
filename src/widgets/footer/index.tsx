@@ -27,9 +27,9 @@ export const Footer = () => {
             <div>
               <h2 className='text-3xl font-extrabold mb-2'>
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'>
-                  Ya
+                  Us
                 </span>
-                <span className='text-white'>Master</span>
+                <span className='text-white'>Ta</span>
               </h2>
               <p className='text-gray-400 text-sm leading-relaxed'>
                 Профессиональные сантехнические услуги в Бишкеке. Работаем с
@@ -95,14 +95,14 @@ export const Footer = () => {
             <ul className='space-y-4'>
               <li>
                 <a
-                  href='tel:+996504454408'
+                  href='tel:+996501622656'
                   className='group flex items-start gap-3 text-gray-400 hover:text-cyan-400 transition-colors duration-300'
                 >
                   <Phone
                     size={20}
                     className='mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300'
                   />
-                  <span>+996 504 454 408</span>
+                  <span>+996 501 622 656</span>
                 </a>
               </li>
               <li>
@@ -141,14 +141,14 @@ export const Footer = () => {
                 Оставьте заявку и получите скидку 10% на первый заказ!
               </p>
               <Link
-                href='tel:+996504454408'
+                href='tel:+996501622656'
                 className='flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/50'
               >
                 <Phone size={20} />
                 <span>Позвонить</span>
               </Link>
               <Link
-                href='https://wa.me/996504454408'
+                href='https://wa.me/996501622656'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-green-500/50'

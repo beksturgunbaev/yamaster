@@ -33,7 +33,7 @@ export const ContactHero = () => {
 
           <div className='flex flex-col sm:flex-row gap-6 justify-center items-center pt-8'>
             <a
-              href='tel:+996700000000'
+              href='tel:+996501622656'
               className='group flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300'
             >
               <Phone className='w-6 h-6 group-hover:rotate-12 transition-transform' />
@@ -41,7 +41,7 @@ export const ContactHero = () => {
             </a>
 
             <a
-              href='mailto:info@usta.kg'
+              href='mailto:turgunbaaev@gmail.com'
               className='group flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold border-2 border-white/30 hover:border-white/50 transition-all duration-300'
             >
               <Mail className='w-6 h-6 group-hover:scale-110 transition-transform' />

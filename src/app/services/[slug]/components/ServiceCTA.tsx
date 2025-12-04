@@ -22,15 +22,15 @@ export const ServiceCTA = () => {
 
           <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
             <a
-              href='tel:+996700000000'
+              href='tel:+996501622656'
               className='group inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto justify-center'
             >
               <Phone className='w-6 h-6 group-hover:rotate-12 transition-transform' />
-              <span>+996 700 000 000</span>
+              <span>+996 501 622 656</span>
             </a>
 
             <a
-              href='https://wa.me/996700000000'
+              href='https://wa.me/996501622656'
               className='group inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto justify-center'
             >
               <MessageCircle className='w-6 h-6 group-hover:scale-110 transition-transform' />

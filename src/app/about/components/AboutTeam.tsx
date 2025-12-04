@@ -100,11 +100,11 @@ export const AboutTeam = () => {
 
           <div className='flex flex-col sm:flex-row items-center justify-center gap-4'>
             <Link
-              href='tel:+996504454408'
+              href='tel:+996501622656'
               className='group inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-blue-600 font-bold py-4 px-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'
             >
               <Phone className='w-5 h-5 group-hover:animate-bounce' />
-              <span>+996 504 454 408</span>
+              <span>+996 501 622 656</span>
             </Link>
 
             <Link

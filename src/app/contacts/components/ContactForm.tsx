@@ -97,7 +97,7 @@ export const ContactForm = () => {
                     onChange={handleChange}
                     required
                     className='w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all outline-none text-gray-900'
-                    placeholder='+996 700 000 000'
+                    placeholder='+996 501 622 656'
                   />
                 </div>
               </div>

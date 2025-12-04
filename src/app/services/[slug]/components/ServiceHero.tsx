@@ -95,13 +95,13 @@ export const ServiceHero = ({ service }: ServiceHeroProps) => {
 
           <div className='flex flex-wrap gap-4 pt-6'>
             <a
-              href='tel:+996700000000'
+              href='tel:+996501622656'
               className='inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300'
             >
               Заказать услугу
             </a>
             <a
-              href='https://wa.me/996700000000'
+              href='https://wa.me/996501622656'
               className='inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold border-2 border-white/30 hover:border-white/50 transition-all duration-300'
             >
               Написать в WhatsApp

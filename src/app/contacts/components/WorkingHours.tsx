@@ -100,10 +100,10 @@ export const WorkingHours = () => {
                   </div>
                 </div>
                 <a
-                  href='tel:+996700000000'
+                  href='tel:+996501622656'
                   className='block w-full bg-white text-green-600 font-bold py-4 px-6 rounded-xl text-center hover:bg-green-50 transition-colors shadow-lg mt-6'
                 >
-                  +996 700 000 000
+                  +996 501 622 656
                 </a>
               </div>
 
