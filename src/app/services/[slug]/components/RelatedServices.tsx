@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { getRelatedServices } from '@/src/shared/data/services';
 import { renderIcon } from '@/src/shared/helpers/renderIcon';
+import { getRelatedServices } from '@/src/shared/data/services';
 
 interface RelatedServicesProps {
   serviceId: string;

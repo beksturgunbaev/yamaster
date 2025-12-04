@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { Service } from '@/src/shared/data/services';
+import { IService } from '@/src/shared/types';
 
 interface ServiceFAQProps {
-  service: Service;
+  service: IService;
 }
 
 export const ServiceFAQ = ({ service }: ServiceFAQProps) => {

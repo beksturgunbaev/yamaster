@@ -1,17 +1,17 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, Clock, DollarSign } from 'lucide-react';
-import { Service } from '@/src/shared/data/services';
-import { renderIcon } from '@/src/shared/helpers/renderIcon';
+import Image from 'next/image';
 import banner from '@/public/banner.jpg';
+import { IService } from '@/src/shared/types';
+import { ArrowLeft, Clock, DollarSign } from 'lucide-react';
+import { renderIcon } from '@/src/shared/helpers/renderIcon';
 
 interface ServiceHeroProps {
-  service: Service;
+  service: IService;
 }
 
 export const ServiceHero = ({ service }: ServiceHeroProps) => {
-  const getCategoryLabel = (category: Service['category']) => {
+  const getCategoryLabel = (category: IService['category']) => {
     switch (category) {
       case 'installation':
         return 'Установка';
@@ -26,7 +26,7 @@ export const ServiceHero = ({ service }: ServiceHeroProps) => {
     }
   };
 
-  const getCategoryColor = (category: Service['category']) => {
+  const getCategoryColor = (category: IService['category']) => {
     switch (category) {
       case 'installation':
         return 'bg-blue-500';
@@ -68,7 +68,11 @@ export const ServiceHero = ({ service }: ServiceHeroProps) => {
 
         <div className='max-w-4xl space-y-6 animate-[fadeInUp_0.8s_ease-out]'>
           <div className='flex items-center gap-4 flex-wrap'>
-            <div className={`inline-flex items-center gap-2 ${getCategoryColor(service.category)} px-4 py-2 rounded-full text-sm font-semibold text-white shadow-lg`}>
+            <div
+              className={`inline-flex items-center gap-2 ${getCategoryColor(
+                service.category
+              )} px-4 py-2 rounded-full text-sm font-semibold text-white shadow-lg`}
+            >
               {renderIcon(service.icon, 'w-5 h-5')}
               <span>{getCategoryLabel(service.category)}</span>
             </div>

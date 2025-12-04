@@ -1,5 +1,4 @@
 'use client';
-import { MapPin, Navigation } from 'lucide-react';
 
 export const ContactMap = () => {
   return (

@@ -4,7 +4,6 @@ import { Phone, MessageCircle } from 'lucide-react';
 export const ServiceCTA = () => {
   return (
     <section className='py-16 bg-gradient-to-br from-cyan-600 via-blue-600 to-blue-700 relative overflow-hidden'>
-      {/* Decorative elements */}
       <div className='absolute inset-0 opacity-10'>
         <div className='absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl' />
         <div className='absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl' />
@@ -16,8 +15,8 @@ export const ServiceCTA = () => {
             Готовы заказать услугу?
           </h2>
           <p className='text-xl text-white/90 mb-10 max-w-2xl mx-auto'>
-            Свяжитесь с нами прямо сейчас, и наши специалисты ответят на все ваши
-            вопросы
+            Свяжитесь с нами прямо сейчас, и наши специалисты ответят на все
+            ваши вопросы
           </p>
 
           <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>

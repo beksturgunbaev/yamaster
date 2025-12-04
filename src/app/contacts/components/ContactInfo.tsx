@@ -1,5 +1,5 @@
 'use client';
-import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 export const ContactInfo = () => {
   const contactItems = [

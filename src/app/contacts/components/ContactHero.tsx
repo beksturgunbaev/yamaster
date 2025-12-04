@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import { Phone, Mail, MapPin } from 'lucide-react';
 import banner from '@/public/banner.jpg';
+import { Phone, Mail } from 'lucide-react';
 
 export const ContactHero = () => {
   return (

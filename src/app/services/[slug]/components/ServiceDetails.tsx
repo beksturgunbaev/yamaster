@@ -1,9 +1,9 @@
 'use client';
 import { Check } from 'lucide-react';
-import { Service } from '@/src/shared/data/services';
+import { IService } from '@/src/shared/types';
 
 interface ServiceDetailsProps {
-  service: Service;
+  service: IService;
 }
 
 export const ServiceDetails = ({ service }: ServiceDetailsProps) => {

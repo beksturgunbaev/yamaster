@@ -1,9 +1,6 @@
 'use client';
-import Link from 'next/link';
-import { ArrowRight, Clock, DollarSign } from 'lucide-react';
-import { SERVICES } from '@/src/shared/data/services';
-import { renderIcon } from '@/src/shared/helpers/renderIcon';
 import { ServiceCard } from '@/src/widgets';
+import { SERVICES } from '@/src/shared/data/services';
 
 export const ServicesList = () => {
   return (

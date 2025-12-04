@@ -1,8 +1,8 @@
 'use client';
-import { Service } from '@/src/shared/data/services';
+import { IService } from '@/src/shared/types';
 
 interface ServiceProcessProps {
-  service: Service;
+  service: IService;
 }
 
 export const ServiceProcess = ({ service }: ServiceProcessProps) => {
