@@ -5,7 +5,7 @@ import { FAQCategories } from './components/FAQCategories';
 import { FAQList } from './components/FAQList';
 import { FAQContact } from './components/FAQContact';
 import { FAQ_ITEMS, getFAQByCategory } from '@/src/shared/data/questions';
-import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
+import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 
 export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState('all');

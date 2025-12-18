@@ -8,7 +8,7 @@ import { ServiceProcess } from './components/ServiceProcess';
 import { ServiceBenefits } from './components/ServiceBenefits';
 import { RelatedServices } from './components/RelatedServices';
 import { getServiceBySlug, SERVICES } from '@/src/shared/data/services';
-import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
+import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 
 interface ServicePageProps {
   params: Promise<{

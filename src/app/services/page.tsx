@@ -1,8 +1,8 @@
 import { CTA } from '../components';
 import type { Metadata } from 'next';
+import { SERVICES } from '@/src/shared/data/services';
 import { ServicesHero, ServicesList } from './components';
-import { SERVICES } from '@/shared/data/services';
-import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
+import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Услуги | Usta - Профессиональные сантехнические услуги в Бишкеке',

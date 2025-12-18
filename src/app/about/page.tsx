@@ -6,7 +6,7 @@ import {
   AboutWhyUs,
   AboutTeam,
 } from './components';
-import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
+import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'О нас | Usta - Профессиональная сантехника в Бишкеке',

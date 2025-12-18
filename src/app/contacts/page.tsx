@@ -4,7 +4,7 @@ import { ContactInfo } from './components/ContactInfo';
 import { ContactForm } from './components/ContactForm';
 import { ContactMap } from './components/ContactMap';
 import { WorkingHours } from './components/WorkingHours';
-import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
+import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Контакты | Usta - Сантехнические услуги в Бишкеке круглосуточно',
