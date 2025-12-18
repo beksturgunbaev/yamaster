@@ -1,9 +1,9 @@
 'use client';
 import { useState, useMemo } from 'react';
 import { FAQHero } from './components/FAQHero';
-import { FAQCategories } from './components/FAQCategories';
 import { FAQList } from './components/FAQList';
 import { FAQContact } from './components/FAQContact';
+import { FAQCategories } from './components/FAQCategories';
 import { FAQ_ITEMS, getFAQByCategory } from '@/src/shared/data/questions';
 import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 

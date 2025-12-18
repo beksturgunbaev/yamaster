@@ -5,37 +5,43 @@ const values = [
   {
     icon: <Heart className='w-8 h-8' />,
     title: 'Честность',
-    description: 'Мы всегда говорим правду о стоимости и сроках работы. Никаких скрытых платежей и неожиданных доплат.',
+    description:
+      'Мы всегда говорим правду о стоимости и сроках работы. Никаких скрытых платежей и неожиданных доплат.',
     gradient: 'from-pink-500 to-rose-500',
   },
   {
     icon: <Shield className='w-8 h-8' />,
     title: 'Надежность',
-    description: 'Гарантируем качество выполненных работ. Используем только проверенные материалы и оборудование.',
+    description:
+      'Гарантируем качество выполненных работ. Используем только проверенные материалы и оборудование.',
     gradient: 'from-cyan-500 to-blue-600',
   },
   {
     icon: <Zap className='w-8 h-8' />,
     title: 'Оперативность',
-    description: 'Выезжаем на вызов в течение 30-60 минут. Ценим ваше время и решаем проблемы максимально быстро.',
+    description:
+      'Выезжаем на вызов в течение 30-60 минут. Ценим ваше время и решаем проблемы максимально быстро.',
     gradient: 'from-yellow-500 to-orange-500',
   },
   {
     icon: <Users className='w-8 h-8' />,
     title: 'Клиентоориентированность',
-    description: 'Индивидуальный подход к каждому клиенту. Учитываем все пожелания и предлагаем оптимальные решения.',
+    description:
+      'Индивидуальный подход к каждому клиенту. Учитываем все пожелания и предлагаем оптимальные решения.',
     gradient: 'from-purple-500 to-indigo-500',
   },
   {
     icon: <Award className='w-8 h-8' />,
     title: 'Профессионализм',
-    description: 'Наши мастера имеют многолетний опыт и регулярно повышают квалификацию на курсах и тренингах.',
+    description:
+      'Наши мастера имеют многолетний опыт и регулярно повышают квалификацию на курсах и тренингах.',
     gradient: 'from-emerald-500 to-teal-500',
   },
   {
     icon: <Clock className='w-8 h-8' />,
     title: 'Доступность 24/7',
-    description: 'Работаем круглосуточно без выходных. Готовы помочь в любое время дня и ночи.',
+    description:
+      'Работаем круглосуточно без выходных. Готовы помочь в любое время дня и ночи.',
     gradient: 'from-blue-500 to-cyan-500',
   },
 ];
@@ -68,11 +74,15 @@ export const AboutValues = () => {
               <div className='absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
 
               <div className='absolute top-0 right-0 w-32 h-32 opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
-                <div className={`w-full h-full bg-gradient-to-br ${value.gradient} rounded-full blur-3xl opacity-20`} />
+                <div
+                  className={`w-full h-full bg-gradient-to-br ${value.gradient} rounded-full blur-3xl opacity-20`}
+                />
               </div>
 
               <div className='relative z-10 space-y-4'>
-                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${value.gradient} text-white shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
+                <div
+                  className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${value.gradient} text-white shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
+                >
                   {value.icon}
                 </div>
 
@@ -85,7 +95,9 @@ export const AboutValues = () => {
                 </p>
               </div>
 
-              <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${value.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`} />
+              <div
+                className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${value.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}
+              />
             </div>
           ))}
         </div>

@@ -1,8 +1,8 @@
 'use client';
-import Image from 'next/image';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import banner from '@/public/banner.jpg';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 const reasons = [
   'Опытные мастера с подтвержденной квалификацией',

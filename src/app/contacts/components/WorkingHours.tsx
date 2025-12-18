@@ -34,8 +34,8 @@ export const WorkingHours = () => {
               График работы
             </h2>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
-              Мы работаем круглосуточно и без выходных, чтобы решить вашу проблему
-              в любое время дня и ночи
+              Мы работаем круглосуточно и без выходных, чтобы решить вашу
+              проблему в любое время дня и ночи
             </p>
           </div>
 
@@ -93,7 +93,9 @@ export const WorkingHours = () => {
                 <div className='flex items-start gap-4 mb-4'>
                   <CheckCircle className='w-8 h-8 flex-shrink-0' />
                   <div>
-                    <h3 className='text-2xl font-bold mb-2'>Мы сейчас работаем!</h3>
+                    <h3 className='text-2xl font-bold mb-2'>
+                      Мы сейчас работаем!
+                    </h3>
                     <p className='text-green-50'>
                       Звоните прямо сейчас, наши мастера готовы выехать к вам
                     </p>
@@ -118,7 +120,8 @@ export const WorkingHours = () => {
                     </h3>
                     <p className='text-gray-600 mb-4'>
                       При аварийных ситуациях (прорыв труб, затопление) наши
-                      специалисты выезжают в течение 30 минут в любое время суток
+                      специалисты выезжают в течение 30 минут в любое время
+                      суток
                     </p>
                     <div className='flex items-center gap-2 text-orange-600 font-semibold'>
                       <Clock className='w-5 h-5' />

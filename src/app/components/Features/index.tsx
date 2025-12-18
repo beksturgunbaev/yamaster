@@ -1,11 +1,11 @@
 'use client';
 import {
-  Shield,
   Clock,
-  BadgeCheck,
-  Headphones,
+  Shield,
   Wallet,
   Sparkles,
+  BadgeCheck,
+  Headphones,
 } from 'lucide-react';
 
 const features = [

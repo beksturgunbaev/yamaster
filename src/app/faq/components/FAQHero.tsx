@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import { HelpCircle, Search } from 'lucide-react';
 import banner from '@/public/banner.jpg';
+import { HelpCircle, Search } from 'lucide-react';
 
 interface FAQHeroProps {
   onSearch: (query: string) => void;

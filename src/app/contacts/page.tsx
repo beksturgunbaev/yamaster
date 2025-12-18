@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
+import { ContactMap } from './components/ContactMap';
 import { ContactHero } from './components/ContactHero';
 import { ContactInfo } from './components/ContactInfo';
 import { ContactForm } from './components/ContactForm';
-import { ContactMap } from './components/ContactMap';
 import { WorkingHours } from './components/WorkingHours';
 import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 

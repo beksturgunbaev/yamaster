@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import { Award, Users, Clock, ShieldCheck } from 'lucide-react';
 import banner from '@/public/banner.jpg';
+import { Award, Users, Clock, ShieldCheck } from 'lucide-react';
 
 export const AboutHero = () => {
   return (

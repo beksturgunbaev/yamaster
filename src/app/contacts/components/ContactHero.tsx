@@ -27,8 +27,8 @@ export const ContactHero = () => {
           </h1>
 
           <p className='text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed'>
-            Профессиональные сантехнические услуги в Бишкеке. Мы всегда на связи и
-            готовы помочь вам решить любые проблемы с сантехникой
+            Профессиональные сантехнические услуги в Бишкеке. Мы всегда на связи
+            и готовы помочь вам решить любые проблемы с сантехникой
           </p>
 
           <div className='flex flex-col sm:flex-row gap-6 justify-center items-center pt-8'>

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SERVICES } from '@/shared/data/services';
+import { SERVICES } from '../shared/data/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://usta-kg.netlify.app';

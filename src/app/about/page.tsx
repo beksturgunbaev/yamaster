@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
 import {
   AboutHero,
-  AboutStats,
-  AboutValues,
-  AboutWhyUs,
   AboutTeam,
+  AboutStats,
+  AboutWhyUs,
+  AboutValues,
 } from './components';
+import type { Metadata } from 'next';
 import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema';
 
 export const metadata: Metadata = {

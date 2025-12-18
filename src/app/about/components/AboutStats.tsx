@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Users, Wrench, Star, Clock } from 'lucide-react';
+import { Users, Wrench, Star, Clock } from 'lucide-react';
 
 interface StatItemProps {
   icon: React.ReactNode;
@@ -72,7 +72,8 @@ const StatItem = ({ icon, value, suffix, label, delay }: StatItemProps) => {
 
         <div>
           <div className='text-4xl md:text-5xl font-extrabold text-gray-900 mb-2'>
-            {count}{suffix}
+            {count}
+            {suffix}
           </div>
           <p className='text-gray-600 font-medium'>{label}</p>
         </div>
@@ -93,7 +94,8 @@ export const AboutStats = () => {
             </span>
           </h2>
           <p className='text-xl text-gray-600 leading-relaxed'>
-            Результаты, которыми мы гордимся и которые подтверждают наш профессионализм
+            Результаты, которыми мы гордимся и которые подтверждают наш
+            профессионализм
           </p>
         </div>
 

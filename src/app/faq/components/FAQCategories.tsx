@@ -1,10 +1,10 @@
 'use client';
 import {
+  Shield,
+  Wrench,
   HelpCircle,
   DollarSign,
-  Wrench,
   AlertTriangle,
-  Shield,
 } from 'lucide-react';
 import { FAQ_CATEGORIES } from '@/src/shared/data/questions';
 

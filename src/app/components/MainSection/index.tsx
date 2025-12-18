@@ -1,6 +1,6 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 import banner from '@/public/banner.jpg';
 import { CustomButton } from '@/src/widgets';
 import { PhoneCall, Droplet, Clock, Shield } from 'lucide-react';
