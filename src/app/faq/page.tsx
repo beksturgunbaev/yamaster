@@ -5,10 +5,15 @@ import { FAQCategories } from './components/FAQCategories';
 import { FAQList } from './components/FAQList';
 import { FAQContact } from './components/FAQContact';
 import { FAQ_ITEMS, getFAQByCategory } from '@/src/shared/data/questions';
+import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
 
 export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Часто задаваемые вопросы', url: '/faq' },
+  ]);
 
   const filteredItems = useMemo(() => {
     let items = getFAQByCategory(activeCategory);
@@ -52,6 +57,10 @@ export default function FAQPage() {
 
   return (
     <>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

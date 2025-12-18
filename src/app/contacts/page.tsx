@@ -4,6 +4,7 @@ import { ContactInfo } from './components/ContactInfo';
 import { ContactForm } from './components/ContactForm';
 import { ContactMap } from './components/ContactMap';
 import { WorkingHours } from './components/WorkingHours';
+import { generateBreadcrumbSchema } from '@/shared/helpers/breadcrumbSchema';
 
 export const metadata: Metadata = {
   title: 'Контакты | Usta - Сантехнические услуги в Бишкеке круглосуточно',
@@ -34,15 +35,19 @@ export const metadata: Metadata = {
 };
 
 export default function ContactsPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Контакты', url: '/contacts' },
+  ]);
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Usta - Сантехнические услуги',
     description:
       'Профессиональные сантехнические услуги в Бишкеке. Работаем круглосуточно 24/7. Аварийная служба, опытные мастера, гарантия качества.',
-    image: 'https://usta.kg/logo.png',
-    '@id': 'https://usta.kg',
-    url: 'https://usta.kg',
+    image: 'https://usta-kg.netlify.app/logo.png',
+    '@id': 'https://usta-kg.netlify.app',
+    url: 'https://usta-kg.netlify.app',
     telephone: '+996501622656',
     email: 'turgunbaaev@gmail.com',
     address: {
@@ -111,6 +116,10 @@ export default function ContactsPage() {
 
   return (
     <>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

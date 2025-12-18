@@ -1,4 +1,5 @@
 import './globals.css';
+import type { Metadata, Viewport } from 'next';
 import { Montserrat } from 'next/font/google';
 import { Footer, Header } from '@/src/widgets';
 
@@ -7,6 +8,52 @@ const montserrat = Montserrat({
   weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: '#2563eb',
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://usta-kg.netlify.app'),
+  title: {
+    default: 'Usta - Профессиональные сантехнические услуги в Бишкеке',
+    template: '%s | Usta',
+  },
+  description:
+    'Профессиональные сантехнические услуги в Бишкеке. Быстрый выезд, опытные мастера, гарантия качества.',
+  applicationName: 'Usta',
+  authors: [{ name: 'Usta' }],
+  generator: 'Next.js',
+  keywords: [
+    'сантехник Бишкек',
+    'сантехнические услуги',
+    'вызов сантехника',
+    'ремонт сантехники',
+    'установка сантехники',
+  ],
+  referrer: 'origin-when-cross-origin',
+  creator: 'Usta',
+  publisher: 'Usta',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Usta',
+  },
+  verification: {
+    google: 'your-google-site-verification-code',
+    yandex: 'your-yandex-verification-code',
+  },
+};
 
 const structuredData = {
   '@context': 'https://schema.org',
