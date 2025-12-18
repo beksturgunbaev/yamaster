@@ -10,7 +10,7 @@ export function ServiceCard({ service }: { service: IService }) {
       href={`/services/${service.slug}`}
       className='group block h-full'
     >
-      <article className='relative h-full flex flex-col bg-white rounded-2xl border-2 border-gray-200 hover:border-cyan-400 p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 overflow-hidden'>
+      <article className='relative h-full flex flex-col bg-white rounded-2xl border-2 border-gray-200 hover:border-cyan-400 py-4 sm:py-5 px-3 sm:px-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 overflow-hidden'>
         <div className='absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-blue-600/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
 
         <div className='relative z-10 flex flex-col h-full'>
@@ -53,14 +53,16 @@ export function ServiceCard({ service }: { service: IService }) {
           </p>
 
           <div className='flex items-center justify-between pt-4 border-t border-gray-100'>
-            <div className='flex items-center gap-4 text-sm'>
+            <div className='flex items-center gap-2 text-sm'>
               <div className='flex items-center gap-1 text-gray-600'>
                 <DollarSign className='w-4 h-4 text-cyan-600' />
-                <span className='font-semibold'>{service.price}</span>
+                <span className='font-semibold text-nowrap'>
+                  {service.price}
+                </span>
               </div>
               <div className='flex items-center gap-1 text-gray-600'>
                 <Clock className='w-4 h-4 text-blue-600' />
-                <span className='text-xs'>{service.duration}</span>
+                <span className='text-xs text-nowrap'>{service.duration}</span>
               </div>
             </div>
 
