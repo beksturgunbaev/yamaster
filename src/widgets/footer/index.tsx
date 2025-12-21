@@ -9,6 +9,7 @@ import {
   Facebook,
   Instagram,
   Send,
+  Droplet,
 } from 'lucide-react';
 
 export const Footer = () => {
@@ -25,12 +26,23 @@ export const Footer = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12'>
           <div className='space-y-6'>
             <div>
-              <h2 className='text-3xl font-extrabold mb-2'>
-                <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'>
-                  Us
-                </span>
-                <span className='text-white'>Ta</span>
-              </h2>
+              <Link
+                href='/'
+                className='flex items-center gap-2 hover:opacity-80 transition-all duration-300 hover:scale-105 group mb-2'
+              >
+                <div className='relative'>
+                  <Droplet
+                    size={40}
+                    className='text-cyan-500 fill-cyan-500 group-hover:fill-blue-600 group-hover:text-blue-600 transition-colors duration-300'
+                  />
+                </div>
+                <h2 className='text-4xl font-bold'>
+                  <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'>
+                    Us
+                  </span>
+                  <span className='text-white'>Ta</span>
+                </h2>
+              </Link>
               <p className='text-gray-400 text-sm leading-relaxed'>
                 Профессиональные сантехнические услуги в Бишкеке. Работаем с
                 2014 года. Более 1000 довольных клиентов.

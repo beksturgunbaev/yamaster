@@ -1,9 +1,7 @@
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { Phone, Menu, X, ChevronRight } from 'lucide-react';
-import logo from '../../../public/logo.png';
+import { Phone, Menu, X, ChevronRight, Droplet } from 'lucide-react';
 import { NAV_MENU } from '@/src/shared/data';
 
 export const Header = () => {
@@ -29,7 +27,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 h-20 flex items-center ${
           scrolled
             ? 'bg-white/95 backdrop-blur-xl shadow-lg'
             : 'bg-white/90 backdrop-blur-md'
@@ -39,9 +37,23 @@ export const Header = () => {
           <div className='flex items-center justify-between'>
             <Link
               href='/'
-              className='flex items-center space-x-3 hover:opacity-80 transition-all duration-300 hover:scale-105'
+              className='flex items-center gap-2 hover:opacity-80 transition-all duration-300 hover:scale-105 group'
             >
-              <Image src={logo} alt='Usta' width={140} priority />
+              <div className='relative'>
+                <Droplet
+                  size={40}
+                  className='text-cyan-500 fill-cyan-500 group-hover:fill-blue-600 group-hover:text-blue-600 transition-colors duration-300'
+                />
+              </div>
+              {/* <span className='text-2xl font-extrabold bg-linear-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent'>
+                USTA
+              </span> */}
+              <h2 className='text-4xl font-bold'>
+                <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'>
+                  Us
+                </span>
+                <span className='text-gray-700'>Ta</span>
+              </h2>
             </Link>
 
             <nav className='hidden lg:flex items-center space-x-8 font-semibold text-gray-700'>
@@ -52,7 +64,7 @@ export const Header = () => {
                   className='relative group py-2 hover:text-cyan-600 transition-colors duration-300 lg:text-lg'
                 >
                   {item?.label}
-                  <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 group-hover:w-full transition-all duration-300' />
+                  <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-cyan-500 to-blue-600 group-hover:w-full transition-all duration-300' />
                 </Link>
               ))}
             </nav>
@@ -60,7 +72,7 @@ export const Header = () => {
             <div className='flex items-center gap-3'>
               <Link
                 href='tel:+996501622656'
-                className='hidden md:flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
+                className='hidden md:flex items-center gap-2 bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
                 aria-label='Позвонить'
               >
                 <Phone size={20} className='animate-pulse' />
@@ -69,7 +81,7 @@ export const Header = () => {
 
               <Link
                 href='tel:+996501622656'
-                className='md:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
+                className='md:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
                 aria-label='Позвонить'
               >
                 <Phone size={22} className='animate-pulse' />
@@ -77,7 +89,7 @@ export const Header = () => {
 
               <button
                 onClick={() => setOpen(!open)}
-                className='lg:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
+                className='lg:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
                 aria-label='Открыть меню'
               >
                 {open ? <X size={24} /> : <Menu size={24} />}
@@ -103,9 +115,14 @@ export const Header = () => {
           }`}
         >
           <div className='flex flex-col h-full'>
-            <div className='flex items-center justify-between p-6 border-b border-gray-200 bg-gradient-to-r from-cyan-500 to-blue-600'>
-              <Link href='/' onClick={() => setOpen(false)}>
-                <Image src={logo} alt='Usta' width={120} />
+            <div className='flex items-center justify-between p-6 border-b border-gray-200 bg-linear-to-r from-cyan-500 to-blue-600'>
+              <Link
+                href='/'
+                onClick={() => setOpen(false)}
+                className='flex items-center gap-2'
+              >
+                <Droplet size={36} className='text-white fill-white' />
+                <span className='text-2xl font-extrabold text-white'>USTA</span>
               </Link>
               <button
                 onClick={() => setOpen(false)}
@@ -121,7 +138,7 @@ export const Header = () => {
                 <Link
                   key={index}
                   href={item?.link}
-                  className='group flex items-center justify-between p-4 rounded-xl hover:bg-gradient-to-r hover:from-cyan-50 hover:to-blue-50 transition-all duration-300'
+                  className='group flex items-center justify-between p-4 rounded-xl hover:bg-linear-to-r hover:from-cyan-50 hover:to-blue-50 transition-all duration-300'
                   onClick={() => setOpen(false)}
                 >
                   <span className='text-lg font-semibold text-gray-700 group-hover:text-cyan-600 transition-colors duration-300'>
@@ -132,10 +149,10 @@ export const Header = () => {
               ))}
             </div>
 
-            <div className='p-6 border-t border-gray-200 space-y-3 bg-gradient-to-br from-gray-50 to-white'>
+            <div className='p-6 border-t border-gray-200 space-y-3 bg-linear-to-br from-gray-50 to-white'>
               <Link
                 href='tel:+996501622656'
-                className='flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'
+                className='flex items-center justify-center gap-2 bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'
                 onClick={() => setOpen(false)}
                 aria-label='Позвонить'
               >
