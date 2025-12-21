@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://usta-kg.netlify.app'),
   title: {
-    default: 'Usta - Профессиональные сантехнические услуги в Бишкеке',
+    default: 'Сантехник Бишкек | Быстрый выезд | Круглосуточно',
     template: '%s | Usta',
   },
   description:
