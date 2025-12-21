@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: 'Usta',
   },
   verification: {
-    google: 'your-google-site-verification-code',
+    google: 'dHkib6Q9s-t9gQuBQTMQFupvQlBTIqcjVxFdXbl_fn0',
     yandex: 'your-yandex-verification-code',
   },
 };

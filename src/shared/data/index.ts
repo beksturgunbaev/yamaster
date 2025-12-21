@@ -8,14 +8,21 @@ export const NAV_MENU = [
         link: '/about'
     },
     {
-        label: 'Контакты',
-        link: '/contacts'
+        label: 'Блог',
+        link: '/blog'
     },
     {
         label: 'Вопросы',
         link: '/faq'
     },
+    {
+        label: 'Контакты',
+        link: '/contacts'
+    },
 ]
+
+// Blog data exports
+export * from './blog';
 
 
 

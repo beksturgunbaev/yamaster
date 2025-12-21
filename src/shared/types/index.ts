@@ -30,3 +30,25 @@ export interface IService {
     keywords: string[];
     category: 'installation' | 'repair' | 'cleaning' | 'emergency' | 'maintenance';
 }
+
+export interface IBlogPost {
+    id: string;
+    title: string;
+    slug: string;
+    excerpt: string;
+    content: string;
+    author: {
+        name: string;
+        role: string;
+        avatar?: string;
+    };
+    publishedAt: string;
+    updatedAt?: string;
+    readingTime: string;
+    category: 'tips' | 'guides' | 'news' | 'cases' | 'maintenance';
+    tags: string[];
+    image: string;
+    imageAlt: string;
+    keywords: string[];
+    featured?: boolean;
+}

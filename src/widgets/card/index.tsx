@@ -3,6 +3,8 @@ import { IService } from '@/src/shared/types';
 import { renderIcon } from '@/src/shared/helpers/renderIcon';
 import { ArrowRight, Clock, DollarSign } from 'lucide-react';
 
+export { BlogCard } from './BlogCard';
+
 export function ServiceCard({ service }: { service: IService }) {
   return (
     <Link
