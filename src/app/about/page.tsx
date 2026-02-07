@@ -70,7 +70,7 @@ const AboutPage = () => {
     logo: 'https://usta-kg.netlify.app/logo.png',
     image: 'https://usta-kg.netlify.app/logo.png',
     telephone: '+996501622656',
-    email: 'info@usta-kg.netlify.app',
+    email: 'turgunbaaev@gmail.com.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Бишкек',

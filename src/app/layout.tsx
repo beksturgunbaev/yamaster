@@ -95,7 +95,7 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <Header />
-        <div className='pt-[74px]'>{children}</div>
+        <div className='pt-18.5'>{children}</div>
         <Footer />
       </body>
     </html>

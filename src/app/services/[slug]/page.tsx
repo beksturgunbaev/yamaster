@@ -76,7 +76,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       '@type': 'LocalBusiness',
       name: 'Usta',
       telephone: '+996501622656',
-      email: 'info@usta-kg.netlify.app',
+      email: 'turgunbaaev@gmail.com.',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Бишкек',
