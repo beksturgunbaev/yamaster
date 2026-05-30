@@ -67,7 +67,7 @@
    - Замените `your-google-site-verification-code` в [src/app/layout.tsx:53](src/app/layout.tsx#L53) на реальный код
 4. Отправьте sitemap.xml:
    - В Search Console перейдите в "Индексирование" → "Файлы Sitemap"
-   - Добавьте URL: `https://usta-kg.netlify.app/sitemap.xml`
+   - Добавьте URL: `https://usta.net.kg/sitemap.xml`
 5. Проверьте индексацию страниц
 6. Настройте отчеты о производительности
 
@@ -158,8 +158,8 @@ import { GoogleAnalytics } from '@next/third-parties/google';
    - Название: Usta
    - Категория: Сантехнические услуги
    - Адрес: ул. Исанова 42, Бишкек
-   - Телефон: +996 501 622 656
-   - Сайт: https://usta-kg.netlify.app
+   - Телефон: +996 705 727 374
+   - Сайт: https://usta.net.kg
    - Часы работы: Круглосуточно
 3. Добавьте фотографии
 4. Соберите отзывы клиентов
@@ -202,8 +202,8 @@ src/app/blog/
 ```typescript
 const nextConfig: NextConfig = {
   images: {
-    domains: ['usta-kg.netlify.app'],
-    formats: ['image/webp', 'image/avif'],
+    domains: ["usta-kg.netlify.app"],
+    formats: ["image/webp", "image/avif"],
   },
 };
 ```
@@ -218,7 +218,7 @@ const nextConfig: NextConfig = {
 
 - Instagram: [@usta-kg.netlify.app](https://instagram.com/usta-kg.netlify.app)
 - Facebook: [/usta-kg.netlify.app](https://facebook.com/usta-kg.netlify.app)
-- WhatsApp Business: +996 501 622 656
+- WhatsApp Business: +996 705 727 374
 - Telegram канал для заказов
 
 Эти ссылки уже добавлены в Organization schema в [src/app/about/page.tsx:104-107](src/app/about/page.tsx#L104-L107)
@@ -245,13 +245,11 @@ src/app/districts/
 #### Настройте отслеживание:
 
 1. **Конверсии:**
-
    - Клики по телефону
    - Отправка форм
    - Переходы на страницы услуг
 
 2. **Отслеживание ошибок:**
-
    - Настройте [Sentry](https://sentry.io) или альтернативу
    - Мониторинг 404 ошибок
 
@@ -277,7 +275,7 @@ src/app/districts/
 
 После деплоя проверьте sitemap:
 
-- https://usta-kg.netlify.app/sitemap.xml
+- https://usta.net.kg/sitemap.xml
 
 #### Мобильная оптимизация
 
@@ -337,7 +335,6 @@ src/app/districts/
 ### Технические метрики:
 
 - **Core Web Vitals:**
-
   - LCP (Largest Contentful Paint): < 2.5s
   - FID (First Input Delay): < 100ms
   - CLS (Cumulative Layout Shift): < 0.1

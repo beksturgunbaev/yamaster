@@ -26,7 +26,7 @@ export const FAQContact = () => {
 
           <div className='grid sm:grid-cols-3 gap-4 mb-10'>
             <a
-              href='tel:+996501622656'
+              href='tel:+996705727374'
               className='group bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 rounded-2xl p-6 transition-all duration-300 hover:scale-105'
             >
               <div className='flex flex-col items-center gap-3'>
@@ -35,13 +35,13 @@ export const FAQContact = () => {
                 </div>
                 <div>
                   <p className='text-white/80 text-sm mb-1'>Позвонить</p>
-                  <p className='text-white font-bold'>+996 501 622 656</p>
+                  <p className='text-white font-bold'>+996 705 727 374</p>
                 </div>
               </div>
             </a>
 
             <a
-              href='https://wa.me/996501622656'
+              href='https://wa.me/996705727374'
               target='_blank'
               rel='noopener noreferrer'
               className='group bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 rounded-2xl p-6 transition-all duration-300 hover:scale-105'

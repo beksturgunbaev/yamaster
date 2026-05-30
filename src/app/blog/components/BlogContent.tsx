@@ -73,21 +73,21 @@ export const BlogContent = () => {
     name: 'Блог Usta - Сантехнические советы и руководства',
     description:
       'Полезные статьи о сантехнике, советы по выбору и обслуживанию',
-    url: 'https://usta-kg.netlify.app/blog',
+    url: 'https://usta.net.kg/blog',
     publisher: {
       '@type': 'Organization',
       name: 'Usta',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://usta-kg.netlify.app/logo.png',
+        url: 'https://usta.net.kg/logo.png',
       },
     },
     blogPost: filteredPosts.slice(0, 10).map((post) => ({
       '@type': 'BlogPosting',
-      '@id': `https://usta-kg.netlify.app/blog/${post.slug}`,
+      '@id': `https://usta.net.kg/blog/${post.slug}`,
       headline: post.title,
       description: post.excerpt,
-      image: `https://usta-kg.netlify.app${post.image}`,
+      image: `https://usta.net.kg${post.image}`,
       datePublished: post.publishedAt,
       dateModified: post.updatedAt || post.publishedAt,
       author: {

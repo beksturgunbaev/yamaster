@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords:
     'о нас, Usta, сантехника Бишкек, профессиональные сантехники, команда мастеров, опыт работы, гарантия качества',
   alternates: {
-    canonical: 'https://usta-kg.netlify.app/about',
+    canonical: 'https://usta.net.kg/about',
   },
   openGraph: {
     title: 'О нас | Usta - Профессиональная сантехника в Бишкеке',
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
       'Узнайте больше о Usta - ведущей сантехнической компании в Бишкеке. Более 10 лет опыта, 1000+ довольных клиентов.',
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://usta-kg.netlify.app/about',
+    url: 'https://usta.net.kg/about',
     siteName: 'Usta',
     images: [
       {
-        url: 'https://usta-kg.netlify.app/logo.png',
+        url: 'https://usta.net.kg/logo.png',
         width: 1200,
         height: 630,
         alt: 'Команда Usta - Профессиональные сантехники',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: 'О нас | Usta - Профессиональная сантехника в Бишкеке',
     description:
       'Узнайте больше о Usta - ведущей сантехнической компании в Бишкеке. Более 10 лет опыта, 1000+ довольных клиентов.',
-    images: ['https://usta-kg.netlify.app/logo.png'],
+    images: ['https://usta.net.kg/logo.png'],
   },
   robots: {
     index: true,
@@ -66,10 +66,10 @@ const AboutPage = () => {
     legalName: 'Usta - Профессиональные сантехнические услуги',
     description:
       'Ведущая сантехническая компания в Бишкеке с более чем 10-летним опытом работы',
-    url: 'https://usta-kg.netlify.app',
-    logo: 'https://usta-kg.netlify.app/logo.png',
-    image: 'https://usta-kg.netlify.app/logo.png',
-    telephone: '+996501622656',
+    url: 'https://usta.net.kg',
+    logo: 'https://usta.net.kg/logo.png',
+    image: 'https://usta.net.kg/logo.png',
+    telephone: '+996705727374',
     email: 'turgunbaaev@gmail.com.',
     address: {
       '@type': 'PostalAddress',
@@ -101,7 +101,7 @@ const AboutPage = () => {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+996501622656',
+      telephone: '+996705727374',
       contactType: 'customer service',
       availableLanguage: ['Russian', 'Kyrgyz'],
       areaServed: 'KG',

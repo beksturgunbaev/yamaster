@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://usta-kg.netlify.app'),
+  metadataBase: new URL('https://usta.net.kg'),
   title: {
     default: 'Сантехник Бишкек | Быстрый выезд | Круглосуточно',
     template: '%s | Usta',
@@ -60,7 +60,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Usta',
   description: 'Профессиональные сантехнические услуги в Бишкеке',
-  telephone: '+996501622656',
+  telephone: '+996705727374',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Бишкек',

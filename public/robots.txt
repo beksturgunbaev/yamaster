@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://usta-kg.netlify.app/sitemap.xml
+Sitemap: https://usta.net.kg/sitemap.xml

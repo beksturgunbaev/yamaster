@@ -54,18 +54,16 @@ export const WorkingHours = () => {
                 {schedule.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex items-center justify-between p-4 rounded-xl transition-all ${
-                      item.day === currentDayName
-                        ? 'bg-gradient-to-r from-cyan-50 to-blue-50 border-2 border-cyan-300'
-                        : 'bg-gray-50 border-2 border-transparent'
-                    }`}
+                    className={`flex items-center justify-between p-4 rounded-xl transition-all ${item.day === currentDayName
+                      ? 'bg-gradient-to-r from-cyan-50 to-blue-50 border-2 border-cyan-300'
+                      : 'bg-gray-50 border-2 border-transparent'
+                      }`}
                   >
                     <span
-                      className={`font-semibold ${
-                        item.day === currentDayName
-                          ? 'text-cyan-700'
-                          : 'text-gray-700'
-                      }`}
+                      className={`font-semibold ${item.day === currentDayName
+                        ? 'text-cyan-700'
+                        : 'text-gray-700'
+                        }`}
                     >
                       {item.day}
                       {item.day === currentDayName && (
@@ -75,11 +73,10 @@ export const WorkingHours = () => {
                       )}
                     </span>
                     <span
-                      className={`font-bold ${
-                        item.day === currentDayName
-                          ? 'text-cyan-600'
-                          : 'text-gray-900'
-                      }`}
+                      className={`font-bold ${item.day === currentDayName
+                        ? 'text-cyan-600'
+                        : 'text-gray-900'
+                        }`}
                     >
                       {item.hours}
                     </span>
@@ -102,10 +99,10 @@ export const WorkingHours = () => {
                   </div>
                 </div>
                 <a
-                  href='tel:+996501622656'
+                  href='tel:+996705727374'
                   className='block w-full bg-white text-green-600 font-bold py-4 px-6 rounded-xl text-center hover:bg-green-50 transition-colors shadow-lg mt-6'
                 >
-                  +996 501 622 656
+                  +996 705 727 374
                 </a>
               </div>
 

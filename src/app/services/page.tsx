@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords:
     'сантехнические услуги Бишкек, сантехник Бишкек, установка сантехники, ремонт сантехники, прочистка засоров, замена труб, установка смесителей, срочный сантехник',
   alternates: {
-    canonical: 'https://usta-kg.netlify.app/services',
+    canonical: 'https://usta.net.kg/services',
   },
   openGraph: {
     title: 'Услуги | Usta - Профессиональные сантехнические услуги в Бишкеке',
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
       'Полный спектр сантехнических услуг в Бишкеке. Гарантия качества, опытные мастера, фиксированные цены.',
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://usta-kg.netlify.app/services',
+    url: 'https://usta.net.kg/services',
     siteName: 'Usta',
     images: [
       {
-        url: 'https://usta-kg.netlify.app/logo.png',
+        url: 'https://usta.net.kg/logo.png',
         width: 1200,
         height: 630,
         alt: 'Сантехнические услуги Usta в Бишкеке',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: 'Услуги | Usta - Профессиональные сантехнические услуги в Бишкеке',
     description:
       'Полный спектр сантехнических услуг в Бишкеке. Гарантия качества, опытные мастера, фиксированные цены.',
-    images: ['https://usta-kg.netlify.app/logo.png'],
+    images: ['https://usta.net.kg/logo.png'],
   },
   robots: {
     index: true,
@@ -67,15 +67,15 @@ const ServicesPage = () => {
       position: index + 1,
       item: {
         '@type': 'Service',
-        '@id': `https://usta-kg.netlify.app/services/${service.slug}`,
+        '@id': `https://usta.net.kg/services/${service.slug}`,
         name: service.title,
         description: service.shortDescription,
-        url: `https://usta-kg.netlify.app/services/${service.slug}`,
-        image: `https://usta-kg.netlify.app/services/${service.slug}.jpg`,
+        url: `https://usta.net.kg/services/${service.slug}`,
+        image: `https://usta.net.kg/services/${service.slug}.jpg`,
         provider: {
           '@type': 'LocalBusiness',
           name: 'Usta',
-          telephone: '+996501622656',
+          telephone: '+996705727374',
         },
         offers: {
           '@type': 'Offer',

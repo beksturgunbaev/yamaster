@@ -27,11 +27,10 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 h-20 flex items-center ${
-          scrolled
-            ? 'bg-white/95 backdrop-blur-xl shadow-lg'
-            : 'bg-white/90 backdrop-blur-md'
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 h-20 flex items-center ${scrolled
+          ? 'bg-white/95 backdrop-blur-xl shadow-lg'
+          : 'bg-white/90 backdrop-blur-md'
+          }`}
       >
         <div className='container mx-auto px-6 py-2'>
           <div className='flex items-center justify-between'>
@@ -71,16 +70,16 @@ export const Header = () => {
 
             <div className='flex items-center gap-3'>
               <Link
-                href='tel:+996501622656'
+                href='tel:+996705727374'
                 className='hidden md:flex items-center gap-2 bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
                 aria-label='Позвонить'
               >
                 <Phone size={20} className='animate-pulse' />
-                <span>+996 501 622 656</span>
+                <span>+996 705 727 374</span>
               </Link>
 
               <Link
-                href='tel:+996501622656'
+                href='tel:+996705727374'
                 className='md:hidden flex items-center justify-center w-12 h-12 rounded-xl bg-linear-to-br from-cyan-500 to-blue-600 text-white shadow-lg hover:scale-105 transition-transform duration-300'
                 aria-label='Позвонить'
               >
@@ -100,9 +99,8 @@ export const Header = () => {
       </header>
 
       <div
-        className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${
-          open ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
+        className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${open ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
       >
         <div
           className='absolute inset-0 bg-black/60 backdrop-blur-sm'
@@ -110,9 +108,8 @@ export const Header = () => {
         />
 
         <nav
-          className={`absolute top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl transform transition-transform duration-300 ${
-            open ? 'translate-x-0' : 'translate-x-full'
-          }`}
+          className={`absolute top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'
+            }`}
         >
           <div className='flex flex-col h-full'>
             <div className='flex items-center justify-between p-6 border-b border-gray-200 bg-linear-to-r from-cyan-500 to-blue-600'>
@@ -151,17 +148,17 @@ export const Header = () => {
 
             <div className='p-6 border-t border-gray-200 space-y-3 bg-linear-to-br from-gray-50 to-white'>
               <Link
-                href='tel:+996501622656'
+                href='tel:+996705727374'
                 className='flex items-center justify-center gap-2 bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'
                 onClick={() => setOpen(false)}
                 aria-label='Позвонить'
               >
                 <Phone size={20} />
-                <span>+996 501 622 656</span>
+                <span>+996 705 727 374</span>
               </Link>
 
               <Link
-                href='https://wa.me/996501622656'
+                href='https://wa.me/996705727374'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105'

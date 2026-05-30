@@ -9,7 +9,7 @@ import { generateBreadcrumbSchema } from '@/src/shared/helpers/breadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Контакты | Usta - Сантехнические услуги в Бишкеке круглосуточно',
   description:
-    'Свяжитесь с нами для вызова сантехника в Бишкеке. Работаем 24/7, выезд мастера в течение 30-60 минут. Телефон: +996 501 622 656. Профессиональные сантехнические услуги, аварийная служба.',
+    'Свяжитесь с нами для вызова сантехника в Бишкеке. Работаем 24/7, выезд мастера в течение 30-60 минут. Телефон: +996 705 727 374. Профессиональные сантехнические услуги, аварийная служба.',
   keywords: [
     'контакты сантехника Бишкек',
     'вызов сантехника',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Контакты - Вызов сантехника в Бишкеке 24/7 | Usta',
     description:
-      'Профессиональные сантехники в Бишкеке. Работаем круглосуточно, быстрый выезд, опытные мастера. Звоните: +996 501 622 656',
+      'Профессиональные сантехники в Бишкеке. Работаем круглосуточно, быстрый выезд, опытные мастера. Звоните: +996 705 727 374',
     type: 'website',
     locale: 'ru_RU',
   },
@@ -45,10 +45,10 @@ export default function ContactsPage() {
     name: 'Usta - Сантехнические услуги',
     description:
       'Профессиональные сантехнические услуги в Бишкеке. Работаем круглосуточно 24/7. Аварийная служба, опытные мастера, гарантия качества.',
-    image: 'https://usta-kg.netlify.app/logo.png',
-    '@id': 'https://usta-kg.netlify.app',
-    url: 'https://usta-kg.netlify.app',
-    telephone: '+996501622656',
+    image: 'https://usta.net.kg/logo.png',
+    '@id': 'https://usta.net.kg',
+    url: 'https://usta.net.kg',
+    telephone: '+996705727374',
     email: 'turgunbaaev@gmail.com',
     address: {
       '@type': 'PostalAddress',

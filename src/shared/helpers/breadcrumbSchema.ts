@@ -4,18 +4,18 @@ interface BreadcrumbItem {
 }
 
 export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
-  const baseUrl = 'https://usta-kg.netlify.app';
+  const baseUrl = "https://usta.net.kg";
 
   // Always start with home
   const breadcrumbList = [
     {
-      '@type': 'ListItem',
+      "@type": "ListItem",
       position: 1,
-      name: 'Главная',
+      name: "Главная",
       item: baseUrl,
     },
     ...items.map((item, index) => ({
-      '@type': 'ListItem',
+      "@type": "ListItem",
       position: index + 2,
       name: item.name,
       item: `${baseUrl}${item.url}`,
@@ -23,8 +23,8 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
   ];
 
   return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
     itemListElement: breadcrumbList,
   };
 }

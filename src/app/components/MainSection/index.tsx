@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import banner from '@/public/banner.jpg';
 import { CustomButton } from '@/src/widgets';
-import { PhoneCall, Droplet, Clock, Shield } from 'lucide-react';
+import { PhoneCall, Droplet, Clock, Shield, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 const MainSection = () => {
   const [phone, setPhone] = useState('');
@@ -17,7 +18,7 @@ const MainSection = () => {
         priority
       />
 
-      <div className='absolute inset-0 z-10 pointer-events-none bg-gradient-to-br from-black/80 via-black/50 to-transparent' />
+      <div className='absolute inset-0 z-10 pointer-events-none bg-linear-to-br from-black/80 via-black/50 to-transparent' />
 
       <div className='absolute inset-0 z-10 pointer-events-none opacity-20'>
         <div className='absolute top-20 left-10 w-72 h-72 bg-cyan-500 rounded-full blur-3xl animate-pulse' />
@@ -26,25 +27,34 @@ const MainSection = () => {
 
       <div className='relative z-20 container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12 py-20'>
         <div className='text-white max-w-2xl space-y-6 animate-[fadeInUp_0.8s_ease-out]'>
-          <div className='inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-2 rounded-full text-sm font-semibold tracking-wider shadow-lg animate-[slideInLeft_0.6s_ease-out] backdrop-blur-sm'>
+          {/* <div className='inline-flex items-center gap-2 bg-linear-to-r from-cyan-500 to-blue-600 px-5 py-2 rounded-full text-sm font-semibold tracking-wider shadow-lg animate-[slideInLeft_0.6s_ease-out] backdrop-blur-sm'>
             <Droplet className='w-4 h-4' />
             Сантехнический сервис №1 в Бишкеке
-          </div>
+          </div> */}
 
           <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[110%] drop-shadow-2xl animate-[fadeInUp_0.8s_ease-out_0.2s_both]'>
-            Профессиональная сантехника <br className='hidden sm:block' />
-            начинается <br />{' '}
+            Чистка <br className='hidden sm:block' />
+            канализации <br />{' '}
             <span className='relative inline-block'>
-              <span className='relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 animate-[shimmer_3s_ease-in-out_infinite]'>
-                c USTA
+              <span className='relative z-10 text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500 animate-[shimmer_3s_ease-in-out_infinite]'>
+                в Бишкеке
               </span>
-              <span className='absolute inset-0 blur-2xl bg-gradient-to-r from-cyan-400 to-blue-500 opacity-50' />
+              <span className='absolute inset-0 blur-2xl bg-linear-to-r from-cyan-400 to-blue-500 opacity-50' />
             </span>
           </h1>
 
           <p className='text-xl sm:text-2xl max-w-xl text-gray-200 drop-shadow-lg animate-[fadeInUp_0.8s_ease-out_0.4s_both] leading-relaxed'>
             Оперативный выезд мастера, честные цены и 100% гарантия качества
           </p>
+
+          <Link
+            href='tel:+996705727374'
+            className='w-full sm:max-w-65 flex justify-center items-center gap-2 bg-linear-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl'
+            aria-label='Позвонить'
+          >
+            <Phone size={20} className='animate-pulse' />
+            <span>Вызвать мастера</span>
+          </Link>
 
           <div className='grid grid-cols-3 gap-4 pt-6 animate-[fadeInUp_0.8s_ease-out_0.6s_both]'>
             <div className='flex flex-col items-center p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105'>
@@ -67,7 +77,7 @@ const MainSection = () => {
 
         <form className='bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl w-full max-w-md space-y-6 border border-white/50 animate-[fadeInRight_0.8s_ease-out_0.4s_both] hover:shadow-cyan-500/20 hover:shadow-3xl transition-all duration-300'>
           <div className='text-center space-y-2'>
-            <div className='inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl shadow-lg mb-2 animate-bounce'>
+            <div className='inline-flex items-center justify-center w-16 h-16 bg-linear-to-br from-cyan-500 to-blue-600 rounded-2xl shadow-lg mb-2 animate-bounce'>
               <PhoneCall className='w-8 h-8 text-white' />
             </div>
             <h3 className='text-2xl font-bold text-gray-900'>
@@ -107,7 +117,7 @@ const MainSection = () => {
         </form>
       </div>
 
-      <div className='absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-50 to-transparent z-20' />
+      <div className='absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-gray-50 to-transparent z-20' />
     </section>
   );
 };

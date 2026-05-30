@@ -33,7 +33,7 @@ export const ContactHero = () => {
 
           <div className='flex flex-col sm:flex-row gap-6 justify-center items-center pt-8'>
             <a
-              href='tel:+996501622656'
+              href='tel:+996705727374'
               className='group flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300'
             >
               <Phone className='w-6 h-6 group-hover:rotate-12 transition-transform' />

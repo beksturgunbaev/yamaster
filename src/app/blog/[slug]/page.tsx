@@ -85,12 +85,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    '@id': `https://usta-kg.netlify.app/blog/${post.slug}`,
+    '@id': `https://usta.net.kg/blog/${post.slug}`,
     headline: post.title,
     description: post.excerpt,
     image: {
       '@type': 'ImageObject',
-      url: `https://usta-kg.netlify.app${post.image}`,
+      url: `https://usta.net.kg${post.image}`,
       width: 1200,
       height: 630,
     },
@@ -106,12 +106,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       name: 'Usta',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://usta-kg.netlify.app/logo.png',
+        url: 'https://usta.net.kg/logo.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://usta-kg.netlify.app/blog/${post.slug}`,
+      '@id': `https://usta.net.kg/blog/${post.slug}`,
     },
     keywords: post.keywords.join(', '),
     articleSection: post.category,

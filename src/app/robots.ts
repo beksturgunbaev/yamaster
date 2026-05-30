@@ -1,25 +1,25 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/api/', '/private/'],
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", "/private/"],
       },
       {
-        userAgent: 'Googlebot',
-        allow: '/',
+        userAgent: "Googlebot",
+        allow: "/",
         crawlDelay: 0,
       },
       {
-        userAgent: 'Yandex',
-        allow: '/',
+        userAgent: "Yandex",
+        allow: "/",
         crawlDelay: 0,
       },
     ],
-    sitemap: 'https://usta-kg.netlify.app/sitemap.xml',
-    host: 'https://usta-kg.netlify.app',
+    sitemap: "https://usta.net.kg/sitemap.xml",
+    host: "https://usta.net.kg",
   };
 }

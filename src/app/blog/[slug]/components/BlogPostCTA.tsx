@@ -16,14 +16,14 @@ export const BlogPostCTA = () => {
           </p>
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
             <a
-              href='tel:+996501622656'
+              href='tel:+996705727374'
               className='inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-cyan-600 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-xl hover:shadow-2xl'
             >
               <Phone className='w-5 h-5' />
-              <span>+996 501 622 656</span>
+              <span>+996 705 727 374</span>
             </a>
             <a
-              href='https://wa.me/996501622656'
+              href='https://wa.me/996705727374'
               target='_blank'
               rel='noopener noreferrer'
               className='inline-flex items-center justify-center gap-3 px-8 py-4 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-all duration-300 shadow-xl hover:shadow-2xl'

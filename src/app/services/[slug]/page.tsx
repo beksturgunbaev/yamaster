@@ -66,16 +66,16 @@ export default async function ServicePage({ params }: ServicePageProps) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `https://usta-kg.netlify.app/services/${service.slug}`,
+    '@id': `https://usta.net.kg/services/${service.slug}`,
     name: service.title,
     description: service.fullDescription,
-    url: `https://usta-kg.netlify.app/services/${service.slug}`,
-    image: `https://usta-kg.netlify.app/services/${service.slug}.jpg`,
+    url: `https://usta.net.kg/services/${service.slug}`,
+    image: `https://usta.net.kg/services/${service.slug}.jpg`,
     serviceType: service.category,
     provider: {
       '@type': 'LocalBusiness',
       name: 'Usta',
-      telephone: '+996501622656',
+      telephone: '+996705727374',
       email: 'turgunbaaev@gmail.com.',
       address: {
         '@type': 'PostalAddress',
@@ -94,10 +94,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: `https://usta-kg.netlify.app/services/${service.slug}`,
+      serviceUrl: `https://usta.net.kg/services/${service.slug}`,
       servicePhone: {
         '@type': 'ContactPoint',
-        telephone: '+996501622656',
+        telephone: '+996705727374',
         contactType: 'customer service',
         availableLanguage: ['Russian', 'Kyrgyz'],
       },
@@ -117,7 +117,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       '@type': 'OrderAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://usta-kg.netlify.app/contacts',
+        urlTemplate: 'https://usta.net.kg/contacts',
         inLanguage: 'ru',
         actionPlatform: [
           'http://schema.org/DesktopWebPlatform',
